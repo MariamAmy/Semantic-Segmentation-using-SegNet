@@ -28,8 +28,42 @@ To improve performance and reduce training time:
 - **CUDA (Compute Unified Device Architecture)** is used for parallel computation.
 - The implementation is optimized for both memory efficiency and speed, making it suitable for real-time applications.
 
+---
+
 ## Requirements
-- Python 3.x
-- TensorFlow / PyTorch
-- CUDA-enabled GPU
-- VOC2012 Dataset
+Ensure the following dependencies are installed:
+- Python 3.x  
+- TensorFlow (with GPU support)  
+- CUDA Toolkit (if using GPU)  
+- VOC2012 Dataset  
+- Docker (Optional for containerization)
+
+---
+
+## How to Run the Project
+
+### 1. Clone the Repository
+```bash
+git clone <repository-link>
+cd Semantic-Segmentation-using-SegNet
+```
+
+### 2. Install Dependencies
+Make sure to create a virtual environment for managing dependencies:
+```bash
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+```
+
+### 3.Install the required Python packages:
+```bash
+pip install -r requirements.txt
+```
+
+### 4.Optional: Running with Docker
+You can containerize the project using Docker for easy setup. Build and run the Docker container:
+```bash
+docker build -t segnet 
+docker run -v <path-to-voc2012>:/data segnet
+```
+
