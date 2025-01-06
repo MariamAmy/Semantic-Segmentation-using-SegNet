@@ -55,12 +55,12 @@ python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 ```
 
-### 3.Install the required Python packages:
+### 3. Install Required Packages:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4.Optional: Running with Docker
+### 4. Optional: Running with Docker
 You can containerize the project using Docker for easy setup. Build and run the Docker container:
 ```bash
 docker build -t segnet 
